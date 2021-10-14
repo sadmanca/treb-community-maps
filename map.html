@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>TREB Community Map Layers</title>
+		<link href="map.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="mapcontainer"></div>
+		<div id="layercontainer">
+			<div class="titleheader header"><div class="collapse" onclick="LayerControl.collapse()">V</div><span class="title">TREB Community Map Layers</span></div>
+			<div class="content" id="layermenu">
+				<div class="header"><span>View Layer:</span></div>
+				<ul>
+					<li><label><input type="checkbox" id="arealayer" name="area" onclick="LayerControl.toggleLayer(this)" onchange="LayerControl.toggleLayer(this)"/> Area</label></li>
+					<li><label><input type="checkbox" id="munilayer" name="muni" onclick="LayerControl.toggleLayer(this)" onchange="LayerControl.toggleLayer(this)"/> Municipalities</label></li>
+					<li><label><input type="checkbox" id="commulayer" name="comm" onclick="LayerControl.toggleLayer(this)" onchange="LayerControl.toggleLayer(this)"/> Communities</label></li>
+					<li><label><input type="checkbox" id="artlayer" name="art" onclick="LayerControl.toggleLayer(this)" onchange="LayerControl.toggleLayer(this)"/> MapArt</label></li>
+				</ul>
+				<div class="header"><span>Find Address, Postal Code, or Town:</span></div>
+				<input type="text" id="geosearch" /><button onclick="LayerControl.search()">Search</button>
+			</div>
+		</div>
+		<script src="map.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?client=gme-torontorealestate&v=3.26&callback=LayerControl.init"></script>
+	</body>
+</html>
