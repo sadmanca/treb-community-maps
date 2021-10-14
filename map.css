@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+	 margin: 0px;
+	 padding: 0px;
+}
+
+#mapcontainer {
+	height: 100%;
+	width: 100%;
+}
+
+#layercontainer {
+	width: 400px;
+	background-color: #f3f3f3;
+	margin: 12px;
+}
+
+#layercontainer {
+	border: solid 2px #333b58;
+}
+
+#layercontainer .titleheader {
+	background-color: #333b58;
+	color: #FFF;
+	padding: 5px;
+}
+
+#layercontainer .header {
+	font-weight: bold;
+	padding: 5px;
+}
+
+#layercontainer .collapse {
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+}
+
+#layercontainer ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#layercontainer ul li {
+	padding-left: 5px;
+}
+
+#layercontainer .hidden {
+	display: none;
+}
+
+#layercontainer .content {
+	padding: 5px;
+}
