@@ -26,7 +26,7 @@
 
 		google.maps.event.addListener(map, 'center_changed', function() {
 			var new_center = map.getCenter();
-			console.log("New Center: ", new_center);
+			console.log("Lat: ", new_center.lat(), "; Lng: ", new_center.lng());
 		});
 		
 		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('layercontainer'));
