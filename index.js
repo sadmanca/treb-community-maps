@@ -25,9 +25,8 @@
 		});
 
 		google.maps.event.addListener(map, 'center_changed', function() {
-			var new_lat = map.getCenter().lat();
-			var new_lng = map.getCenter().lng();
-			console.log("Lat: ", new_lat, "; Lng: ", new_lng);
+			var new_center = new google.maps.LatLng(map.getCenter());
+			console.log("Lat: ", new_center.lat(), "; Lng: ", new_center.lng());
 		});
 		
 		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('layercontainer'));
