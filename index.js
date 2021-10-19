@@ -10,12 +10,12 @@
 	];
 
 	function init() {
-		var defaultCenter = new google.maps.LatLng(43.892761339801176, -79.41482019726558);
+		var defaultCenter = new google.maps.LatLng(43.72234176986217, -79.38805845851657);
 		map = new google.maps.Map(
 			document.getElementById('mapcontainer'),
 			{
 				center: defaultCenter,
-				zoom: 10,
+				zoom: 12,
 				scaleControl: true
 			});
 
