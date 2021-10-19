@@ -31,6 +31,7 @@
 		
 		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('layercontainer'));
 
+		toggleLayer('area');
 		toggleLayer('muni');
 	}
 
