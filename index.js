@@ -20,8 +20,8 @@
 			});
 
 		google.maps.event.addListener(map, 'zoom_changed', function() {
-			var new__zoom = map.getZoom();
-			console.log("New Zoom: ", new__zoom);
+			var new_zoom = map.getZoom();
+			console.log("New Zoom: ", new_zoom);
 		});
 
 		google.maps.event.addListener(map, 'center_changed', function() {
@@ -31,7 +31,7 @@
 		
 		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('layercontainer'));
 
-		toggleLayer('municipalities');
+		toggleLayer('muni');
 	}
 
 	function tileToQuadKey(x, y, zoom) {
