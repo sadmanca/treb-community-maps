@@ -19,6 +19,16 @@
 				scaleControl: true
 			});
 
+		google.maps.event.addListener(map, 'zoom_changed', function() {
+			var new__zoom = map.getZoom();
+			console.log(new__zoom);
+		});
+
+		google.maps.event.addListener(map, 'center_changed', function() {
+			var new_center = map.getCenter();
+			console.log(new_center);
+		});
+		
 		map.controls[google.maps.ControlPosition.TOP_RIGHT].push(document.getElementById('layercontainer'));
 
 		toggleLayer('municipalities');
